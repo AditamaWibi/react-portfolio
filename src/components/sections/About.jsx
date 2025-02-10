@@ -5,6 +5,36 @@ const About = () => {
 
   const backendSkills = ["Node JS", "PHP", "MySQL"];
 
+  const workExperiences = [
+    {
+      title: "Fullstack Web Developer",
+      company: "Bambino Learning Center Kediri",
+      period: "Dec 2022 - Dec 2024",
+      jobdesk: [
+        "Develop a responsive and efficient web application for administration using Laravel and Bootstrap frameworks and store data using MySQL.",
+        "Improve the efficiency of the administration process by 20% by automating routine tasks using the developed application.",
+      ],
+    },
+    {
+      title: "Teacher & Office Staff",
+      company: "Ar-Risallah Islamic Boarding School Lirboyo Kediri",
+      period: "May 2022 - Nov 2022",
+      jobdesk: [
+        "Created learning materials for students in grades 1 and 2 of high school and succeeded in increasing the average score of students in information technology subjects by 15%.",
+        "Working on school administration.",
+      ],
+    },
+    {
+      title: "Intern Programmer",
+      company: "PT. Bhakti Idola Tama",
+      period: "Jan 2022 - March 2022",
+      jobdesk: [
+        "Developed the front-end of the company's B2B website using the Angular framework and implemented third-party APIs.",
+        "Improved the loading speed of the company's B2B website by 10%.",
+      ],
+    },
+  ];
+
   return (
     <section
       id="about"
@@ -18,19 +48,14 @@ const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              vitae numquam nostrum modi dolorum libero laboriosam laborum, odio
-              voluptate consequuntur corporis, itaque adipisci officia atque
-              odit quibusdam dolores cumque harum, porro molestiae quis? Saepe
-              itaque possimus quae ad cum eos vel dolore, asperiores expedita,
-              reprehenderit beatae architecto. A dolorem eaque assumenda
-              incidunt repudiandae amet totam iure nulla ab at ullam magni
-              quisquam perferendis quasi, debitis dignissimos nihil vero
-              corporis! Beatae molestias corrupti recusandae, modi fugit fuga
-              dolor alias, doloribus cum porro eos repellat omnis sit
-              dignissimos suscipit atque placeat quo officia officiis
-              consequuntur blanditiis! A nesciunt consequatur laudantium quos
-              voluptatem?
+              Hi there 👋🏽 I am Wibi Aditama, and I am a Web Developer with more
+              than 2 years of experience in developing and optimizing
+              medium-scale web applications. Successfully increased application
+              efficiency up to 20% through the implementation of API-based
+              features. Proficient in PHP, JavaScript, MySQL, as well as
+              frameworks and tools such as Laravel, Tailwind CSS, Bootstrap, and
+              React JS. Skilled in designing responsive and scalable interfaces,
+              with a focus on innovative and impactful web solutions.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -85,43 +110,18 @@ const About = () => {
               <h3 className="text-xl font-bold mb-4">💼 Work Experience</h3>
 
               <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    Fullstack Web Developer at Bambino Learning Center Kediri
-                    (Dec 2022 - Dec 2024)
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Commodi, odit quod! Voluptate enim pariatur ut quasi totam,
-                    eaque facilis culpa possimus aut quod? Mollitia distinctio
-                    suscipit nesciunt ut ea blanditiis!
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold">
-                    Teacher and Office Staff at Ar-Risallah Islamic Boarding
-                    School Lirboyo Kediri (Mei 2022 - Nov 2022)
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Commodi, odit quod! Voluptate enim pariatur ut quasi totam,
-                    eaque facilis culpa possimus aut quod? Mollitia distinctio
-                    suscipit nesciunt ut ea blanditiis!
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold">
-                    Programmer at PT. Bhakti Idola Tama (Jan 2022 - March 2022)
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Commodi, odit quod! Voluptate enim pariatur ut quasi totam,
-                    eaque facilis culpa possimus aut quod? Mollitia distinctio
-                    suscipit nesciunt ut ea blanditiis!
-                  </p>
-                </div>
+                {workExperiences.map((item, key) => (
+                  <div key={key}>
+                    <h4 className="font-semibold">
+                      {item.title} at {item.company} ({item.period})
+                    </h4>
+                    <ul className="list-disc list-inside text-gray-300 space-y-2">
+                      {item.jobdesk.map((job, i) => (
+                        <li key={i}>{job}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

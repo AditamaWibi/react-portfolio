@@ -5,7 +5,7 @@ const Project = () => {
     {
       name: "Movie Gallery",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda quisquam quo harum libero adipisci doloribus, officiis minus commodi eius ullam voluptatem sunt et accusantium.",
+        "This web application showcases movies from around the world. It demonstrates my proficiency in React JS and Tailwind CSS by utilizing an external API to fetch and display movie data. Additionally, Appwrite is used to implement an algorithm for identifying trending movies.",
       tech: [
         "React",
         "JavaScript",
@@ -19,21 +19,21 @@ const Project = () => {
     {
       name: "YC Directory",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda quisquam quo harum libero adipisci doloribus, officiis minus commodi eius ullam voluptatem sunt et accusantium.",
+        "YC Directory is a website that I created using Next.JS 15, TypeScript, and Tailwind CSS. YC Directory is a website similar to X (Formerly known as Twitter).",
       tech: ["Next JS", "TypeScript", "Tailwind CSS", "GitHub", "API"],
       url: "https://github.com/AditamaWibi/yc_directory",
     },
     {
       name: "Student Administration",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda quisquam quo harum libero adipisci doloribus, officiis minus commodi eius ullam voluptatem sunt et accusantium.",
+        "A website that I created while still working at Bambino Learning Center Kediri that aims to enter and store student data.",
       tech: ["Laravel", "MySQL", "XAMPP", "Bootstrap", "Hostinger"],
       url: "https://github.com/AditamaWibi/bambino-farm",
     },
     {
       name: "Chicken Farm Administration",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda quisquam quo harum libero adipisci doloribus, officiis minus commodi eius ullam voluptatem sunt et accusantium.",
+        "A website that I created while still working at Bambino Learning Center Kediri that aims to enter and store data on chickens, eggs, chicken coops, and chicken feed.",
       tech: ["Laravel", "MySQL", "XAMPP", "Bootstrap", "Hostinger"],
       url: "https://github.com/AditamaWibi/bambino-farm",
     },

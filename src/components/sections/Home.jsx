@@ -13,10 +13,8 @@ const Home = () => {
           </h1>
 
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            A Web Developer with more than 2 years of experience in developing
-            and optimizing medium-scale web applications. Proficient in PHP,
-            JavaScript, MySQL, as well as frameworks and tools such as Laravel,
-            Tailwind CSS, Bootstrap, and React JS.
+            Web Developer with more than 2 years of experience in developing and
+            optimizing medium-scale web applications.
           </p>
 
           <div className="flex justify-center space-x-4">
